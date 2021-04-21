@@ -3,11 +3,13 @@ import './home.css';
 
 function Home() {
   return (
+
     <div className="HomePage">
         <header className="HomeHeader">
-        <h1>home</h1>
+          <Image href='./assets/logo-jussi.png' />
         </header>
     </div>
+
   );
 }
 
