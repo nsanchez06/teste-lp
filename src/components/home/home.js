@@ -1,14 +1,21 @@
 import React from 'react'
-import './home.css';
+import './home.scss';
+import logoJussi from '../img/logo-jussi.png';
 
 function Home() {
   return (
 
     <div className="HomePage">
         <header className="HomeHeader">
-          <Image href='./assets/logo-jussi.png' />
+        <img src={logoJussi} alt={"logo-jussi"}/>
+        <span> Nossas soluções</span>
+        <span > Conheça a Jussi</span>
         </header>
     </div>
+
+
+
+
 
   );
 }

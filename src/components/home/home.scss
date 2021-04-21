@@ -1,12 +1,16 @@
 .HomePage {
     text-align: center;
+    padding: 25px 10px 10px 15px;
   }
   
   
   .HomeHeader {
     background-color: #f3f3f3;
     display: flex;
-    color: rgb(59, 16, 16);
+    color: rgb(0, 0, 0);
+      img {
+        margin: 20px;
+      }
   }
   
 
