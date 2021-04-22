@@ -1,17 +1,114 @@
 .HomePage {
-    text-align: center;
-    padding: 25px 10px 10px 15px;
-  }
+  text-align: center;
+  width: 100%;
+
+    &__HomeHeader {
+      width: 100%;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: space-between;
+      color: rgb(0, 0, 0);
+        &__logoHeader {
+          max-width: 30%;
+          img {
+            margin: 20px;
+          }
+    
+        }
+        &__info-header {
+          display: flex;
+          width: 30%;
+          align-items: center;
+          justify-content: space-around;
+        }
+
+        &__search-header {
+          display: flex;
+          width: 30%;
+          align-items: center;
+          justify-content: space-around;
+            &__search-input {
+              background: #c6ffcd;
+              border: 1px solid #F2F2F2;
+              box-sizing: border-box;
+              border-radius: 24px;
+              width: 240px;
+              height: 40px;
+
+            }
+        }
+
+        &__login-cart {
+          display: flex;
+          width: 30%;
+          align-items: center;
+          justify-content: space-evenly;
+            img {
+                width: 22px;
+                height: 15px;
+            }
+            &__login {
+              padding: 35px;
+            }
+        }
+    }
+
+    &__banner {
+      background: #03FFA5;
+      color: rgb(10, 10, 10);
+      height: 560px;
+      width: 100%;
+        &__conteudo {
+          max-width: 523px;
+          text-align: initial;
+          padding: 140px;
+        }
+        &__details {
+          font-family: Barlow;
+          font-style: normal;
+          font-weight: 500;
+          color: #FFFFFF;
+          font-size: 64px;
+          line-height: 77px;
+          text-transform: uppercase;
+
+        }
+
+        &__text{
+          font-family: Barlow;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 64px;
+          line-height: 77px;
+          text-transform: uppercase;
+          color: #000000;
+          width: 451px;
+          height: 231px;
+        }
+
+        &__text-dois {
+          width: 329px;
+          height: 72px;
+          font-family: Barlow;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+
+        }
+
+        &__button {
+          border-radius: 20px;
+          border-color: black;
+          width: 148px;
+          border-style: solid;
+        }
+    }
+
+}
   
   
-  .HomeHeader {
-    background-color: #f3f3f3;
-    display: flex;
-    color: rgb(0, 0, 0);
-      img {
-        margin: 20px;
-      }
-  }
   
 
   
