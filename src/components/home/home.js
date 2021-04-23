@@ -44,8 +44,9 @@ function Home() {
           <div className="HomePage__banner__conteudo">
             <span className="HomePage__banner__details">//</span>
             <span className="HomePage__banner__text">criamos lojas que vendem mais.</span>
-            <span className="HomePage__banner__text-dois">A Jüssi é especialista na criação de lojas usando a plataforma VTEX. Precisa criar sua loja ou migrar de plataforma?</span>
+            <div className="HomePage__banner__text-dois">A Jüssi é especialista na criação de lojas usando a plataforma VTEX. Precisa criar sua loja ou migrar de plataforma?</div>
             <div className="HomePage__banner__button">Veja nossas soluções</div>
+          </div>
 
             <div className="HomePage__banner__products">
               <div className="product-left">
@@ -53,12 +54,11 @@ function Home() {
               </div>
             </div>
 
-          </div>
         </div>
 
         <div className="tipbar">
 
-          <span>Nossas principais lojas VTEX</span>
+          <div>Nossas principais lojas VTEX <span>→</span></div>
           <div><img src={brastemp} alt={"Brastemp"} /></div>
           <div><img src={compraCerta} alt={"Compra Certa"} /></div>
           <div><img src={consul} alt={"Consul"} /></div>
