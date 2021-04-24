@@ -3,15 +3,9 @@ import React, { useEffect, useState } from 'react'
 import './search.scss';
 
 function Search() {
-    const productName = [
-        "produto 1",
-        "produto 2",
-        "produto 3",
-        "produto 4",
-        "produto 5",
-        "produto 6",
-        "produto 7"
-    ];
+
+
+    const productName  
 
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
@@ -19,11 +13,20 @@ function Search() {
         setSearchTerm(event.target.value);
     };
     useEffect(() => {
-        const results = productName.filter(product =>
-            product.toLowerCase().includes(searchTerm)
-        );
-        setSearchResults(results);
-    }, [searchTerm]);
+        async function renderProductName () {
+            const results = await fetch('http://localhost:2000/plants').then(response => response.json()).then(data => data)
+            
+            
+            
+            
+             results.filter(product =>
+                product.toLowerCase().includes(searchTerm)
+            );
+
+            setSearchResults(results);
+        }
+        renderProductName()
+    }, []);
 
     return (
         <div className="header__search">
@@ -33,11 +36,11 @@ function Search() {
                 value={searchTerm}
                 onChange={handleChange}
             />
-            {/* <ul>
+            <ul>
                 {searchResults.map(item => (
                     <li>{item}</li>
                 ))}
-            </ul> */}
+            </ul>
         </div>
 
     );
