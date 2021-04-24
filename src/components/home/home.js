@@ -24,8 +24,8 @@ function Home() {
   
   return (
 
-    <html className="HomePage">
-      <header className="HomePage__HomeHeader">
+    <div className="HomePage">
+      {/* <header className="HomePage__HomeHeader">
         <div className="HomePage__HomeHeader__logoHeader"><img src={logoJussi} alt={"Logo Jussi"} /></div>
 
         <div className="HomePage__HomeHeader__info-header">
@@ -42,7 +42,7 @@ function Home() {
           <span><img src={carrinho} alt={"Carrinho"} /></span>
         </div>
 
-      </header>
+      </header> */}
 
       <body>
 
@@ -51,7 +51,7 @@ function Home() {
 
         </div>
 
-        <div className="tipbar">
+         <div className="tipbar">
 
           <div>Nossas principais lojas VTEX <span>→</span></div>
           <div><img src={brastemp} alt={"Brastemp"} /></div>
@@ -59,7 +59,7 @@ function Home() {
           <div><img src={consul} alt={"Consul"} /></div>
           <div><img src={theBar} alt={"The Bar"} /></div>
 
-        </div>
+        </div> 
 
         <div className="soluctions">
           <h1><span className="soluctions__details"> //</span> Nossas Soluções</h1>
@@ -109,8 +109,6 @@ function Home() {
 
         </div>
 
-
-
         <div className="quemSomos">
 
           <div className="quemSomos__textContent">
@@ -124,7 +122,7 @@ function Home() {
           <img src={jussi} alt={"Jussi"} />
           </div>
 
-        </div>
+        </div> 
 
         <div className="contactContent">
           <img src={contactInfo} alt={"Contato Jussi"} />
@@ -136,59 +134,11 @@ function Home() {
 
       </body>
 
-      <footer className="footerContent">
-        <img src={footer} alt={"Footer"} />
-      </footer>
-
-
-
-
-    </html>
+    </div>
 
 
   );
 
-  
-  // function search () {
-    
-  //   const people = [
-  //     "Siri",
-  //     "Alexa",
-  //     "Google",
-  //     "Facebook",
-  //     "Twitter",
-  //     "Linkedin",
-  //     "Sinkedin"
-  //   ];
-  
-  //  const [searchTerm, setSearchTerm] = React.useState("");
-  //  const [searchResults, setSearchResults] = React.useState([]);
-  //  const handleChange = event => {
-  //     setSearchTerm(event.target.value);
-  //   };
-  //  React.useEffect(() => {
-  //     const results = people.filter(person =>
-  //       person.toLowerCase().includes(searchTerm)
-  //     );
-  //     setSearchResults(results);
-  //   }, [searchTerm]);
-  
-  //   return (
-  //     <div className="App">
-  //       <input
-  //         type="text"
-  //         placeholder="Search"
-  //         value={searchTerm}
-  //         onChange={handleChange}
-  //       />
-  //       <ul>
-  //          {searchResults.map(item => (
-  //           <li>{item}</li>
-  //         ))}
-  //       </ul>
-  //     </div>
-  //   );
-  // }
 }
 
-export default Home;
+  export default Home

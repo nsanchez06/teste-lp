@@ -16,20 +16,19 @@ function Header() {
   
   return (
 
-      <header className="HomePage__HomeHeader">
-        <div className="HomePage__HomeHeader__logoHeader"><img src={logoJussi} alt={"Logo Jussi"} /></div>
+      <header className="header">
+        {/* <div className="header__logo"><img src={logoJussi} alt={"Logo Jussi"} /></div> */}
 
-        <div className="HomePage__HomeHeader__info-header">
+        <div className="header__informations">
           <span> Nossas soluções</span>
           <span> Conheça a Jussi</span>
         </div>
 
-        <div className="HomePage__HomeHeader__search-header">
-          <span className="HomePage__HomeHeader__search-input">Buscar</span>
+        <div className="header__search-container">
         </div>
 
-        <div className="HomePage__HomeHeader__login-cart">
-          <span className="HomePage__HomeHeader__login">Login</span>
+        <div className="header__login-cart">
+          <span className="header__login">Login</span>
           <span><img src={carrinho} alt={"Carrinho"} /></span>
         </div>
 
