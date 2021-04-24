@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../home/home.scss';
+import './home.scss';
 
 //  START - imagens
 import logoJussi from '../img/logo-jussi.png';
@@ -19,6 +19,9 @@ import footer from '../img/footer.png';
 
 
 function Home() {
+
+
+  
   return (
 
     <html className="HomePage">
