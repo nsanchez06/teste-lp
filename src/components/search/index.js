@@ -1,13 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './search.scss';
 
-
-
-
 function Search() {
-
-
     const productName = [
         "produto 1",
         "produto 2",
@@ -18,12 +13,12 @@ function Search() {
         "produto 7"
     ];
 
-    const [searchTerm, setSearchTerm] = React.useState("");
-    const [searchResults, setSearchResults] = React.useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
     const handleChange = event => {
         setSearchTerm(event.target.value);
     };
-    React.useEffect(() => {
+    useEffect(() => {
         const results = productName.filter(product =>
             product.toLowerCase().includes(searchTerm)
         );
@@ -38,11 +33,11 @@ function Search() {
                 value={searchTerm}
                 onChange={handleChange}
             />
-            <ul>
+            {/* <ul>
                 {searchResults.map(item => (
                     <li>{item}</li>
                 ))}
-            </ul>
+            </ul> */}
         </div>
 
     );

@@ -1,21 +1,14 @@
 import React from 'react';
-import Header from './components/header/header';
-import Search from './components/search/search';
-import Home from './components/home/home';
-import Footer from './components/footer/footer';
-
+import GlobalStyle from './styles/globalStyle';
+import { Routes } from './routes';
 
 function App() {
   return (
     <>
-      <Header /> 
-      <Search />
-      <Home />
-      <Footer />
+      <Routes />
+      <GlobalStyle />
     </>
-
   )
-
 };
 
 export default App;
