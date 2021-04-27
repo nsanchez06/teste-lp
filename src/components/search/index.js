@@ -1,50 +1,49 @@
-import React, { useEffect, useState } from 'react'
+import React from "react";
+
+import imgSearch from '../../assets/search.png';
 
 import './search.scss';
 
-function Search() {
 
 
-    const productName  
-
-    const [searchTerm, setSearchTerm] = useState("");
-    const [searchResults, setSearchResults] = useState([]);
-    const handleChange = event => {
-        setSearchTerm(event.target.value);
-    };
-    useEffect(() => {
-        async function renderProductName () {
-            const results = await fetch('http://localhost:2000/plants').then(response => response.json()).then(data => data)
-            
-            
-            
-            
-             results.filter(product =>
-                product.toLowerCase().includes(searchTerm)
-            );
-
-            setSearchResults(results);
-        }
-        renderProductName()
-    }, []);
-
-    return (
-        <div className="header__search">
+    const productName = [
+        "Bicicleta",
+        "Pia",
+        "Cadeira Gamer",
+        "Torneira"
+       
+      ];
+      
+      function Search() {
+       const [searchTerm, setSearchTerm] = React.useState("");
+       const [searchResults, setSearchResults] = React.useState([]);
+       const handleChange = event => {
+          setSearchTerm(event.target.value);
+        };
+       React.useEffect(() => {
+          const results = productName.filter(product =>
+            product.toLowerCase().includes(searchTerm)
+          );
+          setSearchResults(results);
+        }, [searchTerm]);
+      
+        return (
+          <div className="search">
             <input
-                type="text"
-                placeholder="Busca"
-                value={searchTerm}
-                onChange={handleChange}
+              type="text"
+              placeholder="Buscar"
+              value={searchTerm}
+              onChange={handleChange}
             />
+            <img src={imgSearch} alt={"search"} />
             <ul>
-                {searchResults.map(item => (
-                    <li>{item}</li>
-                ))}
+               {searchResults.map(item => (
+                <li className="item">{item}</li>
+              ))}
             </ul>
-        </div>
-
-    );
-}
+          </div>
+        );
+      }
 
 
 

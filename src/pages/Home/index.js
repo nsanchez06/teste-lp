@@ -1,6 +1,9 @@
 import Footer from "../../components/footer"
 import Header from "../../components/header"
 
+
+import './home.scss';
+
 import banner from '../../assets/hero-banner.png';
 import brastemp from '../../assets/logo-brastemp.png';
 import compraCerta from '../../assets/logo-compra-certa.png';
@@ -9,8 +12,6 @@ import theBar from '../../assets/logo-thebar.png';
 import jussi from '../../assets/image-jussi.png';
 import contactInfo from '../../assets/contact-info.png';
 import newsletter from '../../assets/newletter.png';
-
-import './home.scss';
 
 export const Home = () => {
     return (
@@ -37,7 +38,7 @@ export const Home = () => {
 
                         <div className="soluctions__product-one">
                             <div className="soluctions__productTitle">P1</div>
-                            <div className="soluctions__productName">Nome do Produto #1</div>
+                            <div className="soluctions__productName">Bicicleta</div>
                             <div className="soluctions__productDescription">Descrição do produto #1</div>
                             <div className="soluctions__productFeature">• Feature 1</div>
                             <div className="soluctions__productFeature">• Feature 2</div>
@@ -47,7 +48,7 @@ export const Home = () => {
 
                         <div className="soluctions__product-two">
                             <div className="soluctions__productTitle">P2</div>
-                            <div className="soluctions__productName">Nome do Produto #2</div>
+                            <div className="soluctions__productName">Pia</div>
                             <div className="soluctions__productDescription">Descrição do produto #2</div>
                             <div className="soluctions__productFeature">• Feature 1</div>
                             <div className="soluctions__productFeature">• Feature 2</div>
@@ -57,7 +58,7 @@ export const Home = () => {
 
                         <div className="soluctions__product-three">
                             <div className="soluctions__productTitle">P3</div>
-                            <div className="soluctions__productName"> Nome do Produto #3</div>
+                            <div className="soluctions__productName"> Cadeira Gamer</div>
                             <div className="soluctions__productDescription">Descrição do produto #3</div>
                             <div className="soluctions__productFeature">• Feature 1</div>
                             <div className="soluctions__productFeature">• Feature 2</div>
@@ -67,7 +68,7 @@ export const Home = () => {
 
                         <div className="soluctions__product-four">
                             <div className="soluctions__productTitle">P4</div>
-                            <div className="soluctions__productName">Nome do Produto #4</div>
+                            <div className="soluctions__productName">Torneira</div>
                             <div className="soluctions__productDescription">Descrição do produto #4</div>
                             <div className="soluctions__productFeature">• Feature 1</div>
                             <div className="soluctions__productFeature">• Feature 2</div>
